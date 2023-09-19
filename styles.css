@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+:root {
+	--nerimity-background: #2a2d30;
+	--nerimity-input: #0e0f10;
+}
+
+* {
+	outline: none;
+	margin: 0;
+	resize: none;
+	border: none;
+	font-family: 'Inter', sans-serif;
+}
+
+body {
+	background: #242424;
+}
+
+div#core {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #323232;
+	padding: 1rem;
+	border-radius: 0.25rem;
+	width: 50%;
+}
+
+div.container {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 1rem;
+}
+
+/*div.container:last-child {
+	padding-bottom: 0;
+}*/
+
+.container span {
+	padding-bottom: 0.25rem;
+	color: #ffffff;
+}
+
+.title {
+	font-size: 2rem;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	padding: 1.5rem
+}
+
+#message {
+	background: var(--nerimity-input);
+	padding: 0.5rem;
+	color: #f1f1f1;
+	border: none;
+	min-height: 1.2rem;
+	border-radius: 0.1rem;
+	resize: none;
+}
+
+#preview {
+	background: var(--nerimity-background);
+	padding: 0.5rem;
+	border-radius: 0.1rem;
+	color: rgba(255,255,255,0.8);
+	min-height: 1.2rem;
+	max-height: 20vh;
+	white-space: pre;
+	overflow: auto;
+}
+
+input[type="color"] {
+	background: none;
+	border: #ffffff;
+}
+
+#result {
+	background: var(--nerimity-input);
+	padding: 0.5rem;
+	border-radius: 0.1rem;
+	color: rgba(255,255,255,0.8);
+	min-height: 1.2rem;
+	max-height: 20vh;
+	white-space: pre;
+	overflow: auto;
+}
+
+span.footer {
+	color: #484848;
+	position: absolute;
+	bottom: 0.5rem;
+	left: 0.5rem;
+}
+
+a {color: #545454; text-decoration: none;}
+a:hover {color: #646464;}
+
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #282a2c;
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgba(255,255,255,0.3);
+	border-radius: 0.1rem;
+}
+
+::-webkit-scrollbar-thumb:hover {background: rgba(255,255,255,0.4);}
+
+button {
+	background: #77a8f3;
+	color: #161616;
+	font-weight: bold;
+	padding: 0.5rem;
+	width: 25%;
+	border-radius: 0.25rem;
+	cursor: pointer;
+}
+
+button:hover {
+	opacity: 0.9;
+}
+
+button:active {
+	position: relative;
+	bottom: 1px;
+}

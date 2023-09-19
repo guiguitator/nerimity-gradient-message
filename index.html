@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nerimity Gradient Message</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./styles.css">
+	<script type="text/javascript" src="./libraries/chroma.js"></script>
+	<script type="text/javascript" src="./script.js" defer></script>
+</head>
+<body>
+	<p class="title">Nerimity Gradient Message</p>
+	<div id="core">
+		<div class="container">
+			<span>Your Message :</span>
+			<textarea id="message" onchange="update()" onkeyup="update()" placeholder="Hello World!" autofocus spellcheck="false"></textarea>
+		</div>
+		<div class="container">
+			<span>Choose Colors :</span>
+			<div id="color-container">
+				<input onchange="updateColors()" type="color" value="#ffffff">
+				<input onchange="updateColors()" type="color" value="#ffae00">
+			</div>
+		</div>
+		<div class="container">
+			<span>Preview :</span>
+			<p id="preview"></p>
+		</div>
+		<div class="container">
+			<span>Result :</span>
+			<p id="result"></p>
+		</div>
+		<button onclick="copyResult()">Copy</button>
+	</div>
+	<span class="footer">by <a href="https://github.com/guiguitator/nerimity-gradient-message">Guiguitator</a> | Made with <a  href="https://github.com/gka/chroma.js">Chroma.js</a></span>
+</body>
+</html>
